@@ -3,8 +3,9 @@ html {
 }
 
 body {
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    /* box-sizing: border-box; */
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
 }
 
 *,
@@ -48,5 +49,18 @@ a:active {
 .header__wrapper {
     display: flex;
     align-items: start;
+}
+
+.logo {
+    width: 70px;
+    height: 74.37px;
+}
+
+.logo__header{
+    margin-right: 861px;
+}
+
+.nav__header {
+    margin-right: 207px;
 }
 
