@@ -1,0 +1,32 @@
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.5); /* Полупрозрачный белый фон */
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    border: 5px solid #f3f3f3; /* Светлая часть круга */
+    border-top: 5px solid #3498db; /* Цвет крутящейся части */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2.5s linear, fadeOut 0.5s ease-out 2.5s;
+    opacity: 1; /* Убедитесь, что кружок непрозрачный */
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
