@@ -4,7 +4,6 @@
     /* Стили для экранов шириной 1200 пикселей и больше */
     .container {
         width: 1110px;
-        padding: 0 10px;
     }
 
     .logo__header {
@@ -30,17 +29,29 @@
         gap: 15px;
     }
 
+    .projects__item {
+        width: calc((100% - 20px - 40px) / 3);
+        height: auto;
+    }
 }
 
 /* Планшеты в ландшафтном режиме и небольшие десктопы */
 @media screen and (min-width: 992px) and (max-width: 1199px) {
     /* Стили для экранов от 992 до 1199 пикселей */
 
+    .container {
+        width: 980px;
+    }
+
 }
 
 /* Планшеты в портретном режиме */
 @media screen and (min-width: 768px) and (max-width: 991px) {
     /* Стили для экранов от 768 до 991 пикселей */
+
+    .container {
+        width: 750px;
+    }
 
 }
 
