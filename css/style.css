@@ -3,7 +3,6 @@
 @import url(form.css);
 @import url(header.css);
 @import url(footer.css);
-@import url(responsive.css);
 
 
 html {
@@ -42,6 +41,7 @@ a,
 a:visited,
 a:hover,
 a:active {
+    display: inline-block;
     color: inherit;
     /* Убирает специфичный цвет ссылки, наследует цвет от родителя */
     text-decoration: none;
@@ -167,7 +167,7 @@ li {
 }
 
 .title {
-    font-size: 48px;
+    font-size: clamp(28px, 2.8vw, 48px);
     font-weight: 400;
     margin: 0;
     width: 562px;
@@ -211,7 +211,7 @@ li {
 }
 
 .about__item-title {
-    font-size: 36px;
+    font-size: clamp(26px, 2vw, 36px);
     font-weight: 400;
 }
 
@@ -241,7 +241,7 @@ li {
 
 .steps__el-step-title {
     width: 328px;
-    font-size: 36px;
+    font-size: clamp(24px, 2vw, 36px);
     font-weight: 400;
 }
 
@@ -325,3 +325,185 @@ li {
 /*  section reviews  */
 
 /*  main content  */
+
+/* Десктопы и большие экраны */
+@media screen and (min-width: 1200px) {
+
+    /* Стили для экранов шириной 1200 пикселей и больше */
+    .container {
+        width: 1110px;
+    }
+
+    .logo__header {
+        margin: 0;
+    }
+
+    .nav__header {
+        margin: 0;
+    }
+
+    .tel {
+        margin: 0;
+    }
+
+    .header__wrapper {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu__list {
+        flex-direction: row;
+        width: auto;
+        gap: 15px;
+    }
+
+    .projects__item {
+        width: calc((1110px - 40px) / 3);
+        height: auto;
+    }
+
+    .form__img {
+        width: calc((1110px / 2) - 20px);
+        height: auto;
+    }
+}
+
+/* Планшеты в ландшафтном режиме и небольшие десктопы */
+@media screen and (max-width: 1199px) {
+    /* Стили для экранов от 992 до 1199 пикселей */
+
+    .container {
+        width: 980px;
+    }
+
+    .offer__right-img {
+        width: calc((980px / 2) - 9px);
+        height: auto;
+    }
+
+    .offer__left-img {
+        width: calc(980px * 0.239);
+        height: auto;
+    }
+
+    .projects__item {
+        width: calc((980px - 40px) / 3);
+        height: auto;
+    }
+
+    .form__img {
+        width: calc((980px / 2) - 20px);
+        height: auto;
+    }
+
+    .logo__header,
+    .nav__header,
+    .tel {
+        margin: 0;
+    }
+
+    .header__wrapper {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu__list {
+        width: auto;
+        flex-direction: row;
+        width: auto;
+        gap: 15px;
+    }
+
+    .offer__title {
+        font-size: 48px;
+        width: calc(980px * 0.577);
+    }
+
+    .offer__text {
+        width: calc(980px * 0.323);
+    }
+
+    .title {
+        width: auto;
+    }
+
+    .steps__el-step-text {
+        margin-top: 0;
+    }
+}
+
+/* Планшеты в портретном режиме */
+@media screen and (max-width: 991px) {
+    /* Стили для экранов от 768 до 991 пикселей */
+
+    .container {
+        width: 750px;
+    }
+
+    .offer__right-img {
+        width: calc((750px / 2) - 9px);
+    }
+
+    .offer__left-img {
+        width: calc(750px * 0.239);
+    }
+
+    .projects__item {
+        width: calc((750px - 40px) / 3);
+    }
+
+    .form__img {
+        width: calc((750px / 2) - 20px);
+    }
+
+    .offer__title {
+        width: calc(750px * 0.577);
+    }
+
+    .offer__text {
+        width: calc(750px * 0.323);
+    }
+
+    .offer__text-wrapper {
+        flex-direction: column;
+    }
+
+    .offer__text-wrapper-left {
+        align-items: center;
+        text-align: center;
+
+    }
+    
+    .offer {
+        height: 874px;
+    }
+
+    .offer__left-img {
+        bottom: 84px;
+        left: 25px;
+    }
+
+    .offer__right-img {
+        right: 15px;
+    }
+
+    .about__text {
+        width: calc((750px * 0.5) - 9px);
+    }
+
+    .reviews__item {
+        height: 420px;
+    }
+}
+
+/* Большие мобильные телефоны и небольшие планшеты */
+@media screen and (max-width: 767px) {
+    /* Стили для экранов от 576 до 767 пикселей */
+    
+}
+
+/* Маленькие мобильные телефоны */
+@media screen and (max-width: 575px) {
+    /* Стили для экранов шириной 575 пикселей и меньше */
+
+}
