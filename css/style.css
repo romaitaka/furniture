@@ -654,5 +654,35 @@ li {
 /* Extra 320px */
 
 @media screen and (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 0 5px;
+    }
 
+    .offer__title {
+        width: 100%;
+        font-size: 30px;
+    }
+
+    .offer {
+        height: 520px;
+    }
+
+    .steps__el-step {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .steps__el-step-title {
+        width: 100%;
+        text-align: center;
+    }
+
+    .steps__el-step-text {
+        width: 100%;
+    }
+
+    .reviews__item {
+        height: 350px;
+    }
 }
