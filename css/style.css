@@ -56,7 +56,7 @@ li {
     margin: 0 auto;
 }
 
-/* <!-- header --> */
+/*  header */
 
 .header {
     padding: 12px 0 40px 0;
@@ -118,9 +118,9 @@ li {
     font-weight: 400;
 }
 
-/* <!-- header --> */
+/*  header  */
 
-/* <!-- main content --> */
+/*  main content  */
 
 
 
@@ -130,6 +130,8 @@ li {
     gap: 120px;
     padding: 0 5px;
 }
+
+/*  offer section  */
 
 .offer {
     height: 1107px;
@@ -201,6 +203,9 @@ li {
 }
 
 /* order button */
+
+/*  offer section  */
+
 
 /* section about */
 
@@ -326,4 +331,13 @@ li {
 }
 /* section projects */
 
-/* <!-- main content --> */
+
+/*  section reviews  */
+
+.reviews {
+    
+}
+
+/*  section reviews  */
+
+/*  main content  */
