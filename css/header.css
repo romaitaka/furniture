@@ -30,6 +30,7 @@
 
 .nav__header {
     margin-right: 207px;
+    position: relative;
 }
 
 .menu__list {
@@ -38,6 +39,52 @@
     gap: 8px;
     width: 98px;
 }
+
+/* Burger-menu */
+/* Добавьте это, если у родительского контейнера кнопки бургера нет position: relative */
+.parent-container {
+    position: relative;
+    /* Замените .parent-container на фактический класс или ID */
+}
+
+/* Корректировки для меню бургера */
+.burger-menu {
+    display: none;
+    /* Скрываем изначально */
+    position: absolute;
+    right: 0;
+    /* Выравниваем по правому краю */
+    bottom: -150px;
+    /* Подстройте это значение под высоту вашей кнопки бургера */
+    flex-direction: column;
+    align-items: flex-end;
+    /* Выравниваем элементы по правому краю */
+    gap: 15px;
+    background-color: #fff;
+    z-index: 10;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Убедитесь, что иконка бургера видима */
+.burger {
+    width: auto;
+    /* Можно настроить ширину по необходимости */
+    height: 30px;
+    /* Настроить высоту по необходимости */
+    display: block;
+    /* Показываем иконку бургера */
+}
+
+/* Когда меню должно быть показано */
+.burger-menu.show {
+    display: flex;
+    /* Показываем меню */
+}
+
+
+/* Burger-menu */
 
 /* menu buttons */
 

@@ -77,6 +77,7 @@ li {
     flex-direction: column;
     gap: 120px;
     padding: 0 5px;
+    margin-bottom: 20px;
 }
 
 /*  offer section  */
@@ -471,9 +472,9 @@ li {
     .offer__text-wrapper-left {
         align-items: center;
         text-align: center;
-
+        width: auto;
     }
-    
+
     .offer {
         height: 874px;
     }
@@ -494,16 +495,164 @@ li {
     .reviews__item {
         height: 420px;
     }
+
+    .form {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .form__img {
+        width: 100%;
+    }
+
+    .form-container {
+        width: 100%;
+    }
+
+    .form-container h2 {
+        width: inherit;
+    }
 }
 
 /* Большие мобильные телефоны и небольшие планшеты */
 @media screen and (max-width: 767px) {
+
     /* Стили для экранов от 576 до 767 пикселей */
-    
+    .container {
+        width: 550px;
+        padding: 0 15px;
+    }
+
+    .wrapper-container {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .column-wrapper {
+        padding-left: 0;
+    }
+
+    .title-wrapper {
+        width: inherit;
+    }
+
+    .about__text {
+        width: inherit;
+    }
+
+    .column-wrapper {
+        width: inherit;
+    }
+
+    .about__item {
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .about__item-title {
+        width: 100px;
+    }
+
+    .steps__el-step-title {
+        width: 32%;
+    }
+
+    .steps__el-step-text {
+        width: 64%;
+    }
+
+    .reviews__wrapper {
+        flex-direction: column;
+    }
+
+    .reviews__item {
+        width: 520px;
+        height: 270px;
+    }
+
+    .offer__right-img {
+        width: calc((550px / 2) - 9px);
+        right: 0;
+    }
+
+    .offer__left-img {
+        width: calc(550px * 0.239);
+        left: 0;
+    }
+
+    .menu__item,
+    .tel {
+        font-size: 16px;
+    }
+
+
 }
 
 /* Маленькие мобильные телефоны */
 @media screen and (max-width: 575px) {
-    /* Стили для экранов шириной 575 пикселей и меньше */
+
+    /* Стили для экранов шириной 575 пикселей и меньше (481)*/
+    .container {
+        width: 440px;
+    }
+
+    .nav__header {
+        display: none;
+    }
+
+    .tel {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .reviews__item {
+        width: 100%;
+    }
+
+    .offer__right-img {
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 100%;
+        z-index: -2;
+    }
+
+    .offer__left-img {
+        display: none;
+    }
+
+    .offer__text-link {
+        z-index: 1;
+    }
+
+    .offer__text-wrapper-right {
+        align-items: center;
+    }
+
+    .offer__text-link {
+        text-align: center;
+    }
+
+    .steps__el-step-title {
+        width: 40%;
+    }
+
+    .steps__el-step-text {
+        width: 56%;
+    }
+
+    .projects__item {
+        width: 100%;
+    }
+}
+
+/* Extra 320px */
+
+@media screen and (max-width: 480px) {
 
 }
