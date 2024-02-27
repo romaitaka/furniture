@@ -269,14 +269,14 @@ li {
     gap: 20px;
 }
 
-.projects__img {
-    width: inherit;
-    height: inherit;
-}
-
 .projects__item {
     width: 445px;
     height: 580px;
+}
+
+.projects__img {
+    width: inherit;
+    height: inherit;
 }
 
 /* section projects */
