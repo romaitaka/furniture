@@ -37,7 +37,7 @@
                             <a href="#" class="menu__link">Материалы</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#" class="menu__link">Отзывы</a>
+                            <a href="#reviews" class="menu__link">Отзывы</a>
                         </li>
                     </ul>
                 </nav>
@@ -58,7 +58,7 @@
                         решение любой задумки.</p>
                 </div>
                 <div class="offer__text-wrapper-right">
-                    <a href="" class="offer__text-link">ЗАКАЗАТЬ ПРОЕКТ</a>
+                    <a href="#form" class="offer__text-link">ЗАКАЗАТЬ ПРОЕКТ</a>
                 </div>
                 <img src="img/offer__left-img.jpeg" alt="Furniture pic" class="offer__left-img">
                 <img src="img/offer__right-img.jpeg" alt="Furniture picture" class="offer__right-img">
@@ -164,23 +164,66 @@
         <!-- projects section -->
 
         <!-- section reviews -->
-        <section class="reviews container">
+        <section class="reviews container" id="reviews">
+            <h2 class="title">Отзывы</h2>
             <div class="reviews__wrapper">
                 <div class="reviews__item">
-                    <img src="" alt="" class="reviews__img">
-                    <p class="reviews__name"></p>
-                    <p class="reviews__text"></p>
+                    <img src="img/icon.svg" alt="Quotation marks" class="reviews__img">
+                    <p class="reviews__name">Игорь Антонов</p>
+                    <p class="reviews__text">Обратилась к Aveji по рекомендации. Команда сразу поняла, какой дизайн
+                        я хочу. Предоставили несколько вариантов и в течение недели сделали наброски. Итог понравился,
+                        все на высшем уровне.</p>
+                </div>
+                <div class="reviews__item">
+                    <img src="img/icon.svg" alt="Quotation marks" class="reviews__img">
+                    <p class="reviews__name">Ольга Иванова</p>
+                    <p class="reviews__text">После пары заказов у компании Aveji убедилась, что за мебелью теперь только
+                        к ним. Абсолютно любые решения, в любых размерах и форм-факторе, то что нужно!</p>
+                </div>
+                <div class="reviews__item">
+                    <img src="img/icon.svg" alt="Quotation marks" class="reviews__img">
+                    <p class="reviews__name">Аркадий Макаров</p>
+                    <p class="reviews__text">Aveji — настоящие профессионалы своего дела. Быстро поняли мою задумку,
+                        сделали дизайн, согласовали и изготовили мебель. А потом еще и бесплатно все собрали на месте.
+                        Большое спасибо!</p>
                 </div>
             </div>
         </section>
         <!-- section reviews -->
+
+        <section class="form container" id="form">
+            <img src="img/form-img.jpg" alt="Furniture" class="form__img">
+            <!-- Form -->
+            <div class="form-container">
+                <h2 class="title">Хотите заказать проект?</h2>
+                <p class="form__description">Оставьте заявку, и мы вам перезвоним</p>
+                <form action="/submit-form" method="post" class="inputs-wrapper">
+                    <input type="text" id="name" name="name" required class="form-field" placeholder="Имя">
+                    <input type="email" id="email" name="email" required class="form-field" placeholder="E-mail">
+                    <input type="tel" id="phone" name="phone" required class="form-field" placeholder="Телефон">
+                </form>
+                <button type="submit" class="form-button">Отправить заявку</button>
+            </div>
+            <!-- Form -->
+        </section>
     </main>
     <!-- main content -->
 
+    <!-- footer -->
+    <footer class="footer container">
+        <a href="index.html">
+            <img src="img/logo.svg" alt="Logo" class="logo">
+        </a>
+        <p class="default-text">Все права защищены</p>
+        <a href="https://t.me/@romaitaka"><img src="img/bi_telegram.svg" alt="Telegram" class="telegram-icon"></a>
+        <a href="tel:+79999999999" class="tel">+7 999 999 99 99</a>
+    </footer>
+    <!-- footer -->
 
 
     <script src="js/preloader.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/validator.js"></script>
 </body>
 
 </html>

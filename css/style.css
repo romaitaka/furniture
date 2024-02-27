@@ -1,5 +1,10 @@
 @import url(normalize.css);
 @import url(preloader.css);
+@import url(form.css);
+@import url(header.css);
+@import url(footer.css);
+@import url(responsive.css);
+
 
 html {
     scroll-behavior: smooth;
@@ -14,6 +19,9 @@ body {
 *,
 *::before,
 *::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
     box-sizing: border-box;
 }
 
@@ -42,6 +50,7 @@ a:active {
     /* Убирает фон, если он был */
     -webkit-text-decoration-skip: objects;
     /* Пропускает декорацию текста вокруг объектов для WebKit браузеров */
+    outline: none;
 }
 
 ul,
@@ -56,73 +65,12 @@ li {
     margin: 0 auto;
 }
 
-/*  header */
-
-.header {
-    padding: 12px 0 40px 0;
-}
-
-.header__wrapper {
-    display: flex;
-    align-items: start;
-}
-
-.logo {
-    width: 70px;
-    height: 74.37px;
-}
-
-.tel {
-    font-weight: 400;
-    font-size: 18px;
-}
-
-.tel:hover {
-    transition: text-decoration 0.3 ease;
-    text-decoration: underline;
-}
-
-.logo__header {
-    margin-right: 861px;
-}
-
-.nav__header {
-    margin-right: 207px;
-}
-
-.menu__list {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    width: 98px;
-}
-
-/* menu buttons */
-
-.menu__link {
-    display: inline-block;
-    cursor: pointer;
-    transition: transform 0.3s ease, text-decoration 0.3s ease, margin 0.3s ease;
-}
-
-.menu__link:hover {
-    transform: scale(1.2);
-    margin-left: 15px;
-    text-decoration: underline;
-}
-
-/* menu buttons */
-
-.menu__item {
-    font-size: 18px;
+.default-text {
+    font-size: 16px;
     font-weight: 400;
 }
-
-/*  header  */
 
 /*  main content  */
-
-
 
 .content {
     display: flex;
@@ -304,6 +252,7 @@ li {
     line-height: 1.4em;
     width: 329px;
 }
+
 /* section steps */
 
 /* section projects */
@@ -329,13 +278,48 @@ li {
     width: 445px;
     height: 580px;
 }
+
 /* section projects */
 
 
 /*  section reviews  */
 
 .reviews {
-    
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.reviews__wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.reviews__item {
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border: 1px solid black;
+    width: 445px;
+    height: 327px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reviews__name {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 32px auto 20px;
+}
+
+.reviews__img {
+    width: 40px;
+    height: 30px;
+}
+
+.reviews__text {
+    text-align: center;
 }
 
 /*  section reviews  */

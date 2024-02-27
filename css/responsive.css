@@ -1,0 +1,61 @@
+/* Десктопы и большие экраны */
+@media screen and (min-width: 1200px) {
+
+    /* Стили для экранов шириной 1200 пикселей и больше */
+    .container {
+        width: 1110px;
+        padding: 0 10px;
+    }
+
+    .logo__header {
+        margin: 0;
+    }
+
+    .nav__header {
+        margin: 0;
+    }
+
+    .tel {
+        margin: 0;
+    }
+
+    .header__wrapper {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu__list {
+        flex-direction: row;
+        width: auto;
+        gap: 15px;
+    }
+
+    .projects__item {
+        width: calc((100%-40px)/3);
+        height: auto;
+    }
+}
+
+/* Планшеты в ландшафтном режиме и небольшие десктопы */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    /* Стили для экранов от 992 до 1199 пикселей */
+
+}
+
+/* Планшеты в портретном режиме */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    /* Стили для экранов от 768 до 991 пикселей */
+
+}
+
+/* Большие мобильные телефоны и небольшие планшеты */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    /* Стили для экранов от 576 до 767 пикселей */
+
+}
+
+/* Маленькие мобильные телефоны */
+@media screen and (max-width: 575px) {
+    /* Стили для экранов шириной 575 пикселей и меньше */
+
+}
